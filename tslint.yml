@@ -1,0 +1,16 @@
+defaultSeverity: error
+extends:
+  - tslint-react
+  - tslint-eslint-rules
+rules:
+  eofline: true
+  no-console: false
+  no-construct: true
+  no-debugger: true
+  no-reference: true
+  jsx-no-multiline-js: false
+  jsx-no-lambda: false
+globals:
+  moment: true
+linterOptions:
+  exclude: ['*/**/*.test.ts', '*/**/*.test.tsx', '\"**/__test__/**\"']
